@@ -5,6 +5,8 @@ This is example of Django UnitTest using Selenium.
 * Functional Test using Selenium
 * Unit Test using Django
 
+## Usage
+
 to use Selenium, navigate to project directory then create virtual environment
 ```sh
 virtualenv -p python3.8 env
@@ -27,5 +29,17 @@ to test it
 ```bash
 cd hashthat/
 python manage.py test
+```
+the expected output should be like:
+```
+Found 9 test(s).
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 14.140s
+
+OK
+Destroying test database for alias 'default'...
 ```
 
