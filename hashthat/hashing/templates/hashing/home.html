@@ -11,8 +11,8 @@
 $('#id_text').keyup(function(){
     var text = $(this).val();
     $.ajax({
-        url: '/hash_quick',
-        data: {text},
+        url: '/hash/quick/',
+        data: {'text': text},
         dataType: 'json',
         success: function(data) {
             $('#hash_quick').text(data['hash']);

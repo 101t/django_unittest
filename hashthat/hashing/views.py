@@ -12,7 +12,7 @@ def home(request):
             text = filled_form.cleaned_data['text']
             text_hash = hashlib.sha256(text.encode('utf-8')).hexdigest()
             try:
-                Hash.objects.get(hash)
+                Hash.objects.get(hash=text_hash)
             except Hash.DoesNotExist:
                 hash = Hash()
                 hash.text = text
